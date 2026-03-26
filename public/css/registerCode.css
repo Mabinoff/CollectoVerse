@@ -1,0 +1,136 @@
+.body-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 24px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: var(--gray);
+}
+
+p {
+    color: var(--textMuted);
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+
+.code-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+ .button {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.retour {
+    border: none;
+    background-color: var(--error);
+    border-radius: 8px;
+    padding: 12px 48px;
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    width: 200px;
+}
+
+.valider {
+    border: none;
+    background-color: var(--primary);
+    border-radius: 8px;
+    padding: 12px 48px;
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    width: 200px;
+}
+
+input {
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: var( --background-element);
+    color: var(--white);
+    font-size: 15px;
+    width: 250px;
+}
+
+input::placeholder {
+    color: var(--gray);
+    font-family: "Nunito", sans-serif;
+}
+
+@media (min-width: 460px) {
+
+    input {
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: var( --background-element);
+    color: var(--white);
+    font-size: 15px;
+    max-width: 450px;
+    width: 150%;
+}
+    .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.retour {
+    border: none;
+    background-color: var(--error);
+    border-radius: 8px;
+    padding: 12px 48px;
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.valider {
+    border: none;
+    background-color: var(--primary);
+    border-radius: 8px;
+    padding: 12px 48px;
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+    
+}
+

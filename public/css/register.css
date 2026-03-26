@@ -1,0 +1,138 @@
+.body-section {
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 80px 64px;
+    min-height: 80vh;
+}
+
+.formulary-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+}
+
+.para-register {
+    font-size: 15px;
+    color: var(--gray);
+    margin: 10px 0;
+    font-family: "Inter";
+}
+
+.formulary-section h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: "Nunito", sans-serif;
+}
+
+.formulary-section a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.formulary-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.formulary-section input {
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: var( --background-element);
+    color: var(--white);
+    font-size: 15px;
+    max-width: 400px;
+    width: 90%;
+}
+
+.formulary-section input::placeholder {
+    color: var(--gray);
+    font-family: "Inter";
+    font-size: 12px;
+}
+
+.formulary-section button {
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: var(--primary);
+    border-radius: 8px;
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    width: 50%;
+    align-items: flex-start;
+}
+
+button:hover {
+    background-color: var(--primary);
+    opacity: 0.7;
+}
+
+.login-style {
+    display: none;
+
+}
+
+.login-style h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+
+    .body-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+        padding: 8% 6.4%;
+    }
+
+    .formulary-section{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .formulary-section h1 {
+         font-size: 36px;
+         font-family: "Nunito", sans-serif;
+     }
+
+    .login-style{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        gap: 26px;
+        max-width: 640px;
+        text-align: center;
+    }
+
+    .logofond{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .login-style h2 {
+         font-size: 26px;
+         font-family: "Nunito", sans-serif;
+     }
+}
+

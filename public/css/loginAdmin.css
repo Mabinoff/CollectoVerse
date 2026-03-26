@@ -1,0 +1,130 @@
+@import url("./index.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+body {
+    background: var(--background);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.formulary-sexion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+}
+
+.formulary-sexion h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: "Nunito", sans-serif;
+}
+
+.formulary-sexion form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.formulary-sexion input {
+    padding: 20px;
+    border-radius: 12px;
+    border: none;
+    background: var(--background-element);
+    color: var(--white);
+    font-size: 16px;
+    max-width: 400px;
+    width: 100%;
+    height: 48px;
+    margin: 0 auto;
+}
+
+.formulary-sexion input::placeholder {
+    color: var(--gray);
+}
+
+.formulary-sexion button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: var(--primary);
+    border-radius: 8px;
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    width: 60%;
+    max-width: 248px;
+    padding: 12px 16px;
+    margin: 0 auto;
+    height: 40px;
+}
+
+button:hover {
+    background-color: var(--primary);
+    opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+
+    .body-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 16% 12%;
+    }
+
+    .formulary-sexion{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .formulary-sexion h1 {
+         font-size: 62px;
+         font-family: "Nunito", sans-serif;
+     }
+}
+
+@media (max-width: 360px) {
+
+    .body-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 8px;
+        gap: 10px;
+    }
+
+    .formulary-sexion{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .formulary-sexion h1 {
+         font-size: 20px;
+         font-family: "Nunito", sans-serif;
+     }
+}
+

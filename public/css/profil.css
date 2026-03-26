@@ -1,0 +1,294 @@
+body {
+    background: var(--background);
+    color: var(--white);
+    min-height: 100vh;
+}
+
+.body-section {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 40px 20px;
+}
+
+.body-section p {
+    font-size: 16px;
+    color: var(--gray);
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.card-stats h1 {
+   height: 48px;
+   display: flex;
+   align-items: center;
+}
+
+.categories-stats h1 {
+   height: 48px;
+   display: flex;
+   align-items: center;
+}
+
+.body-section h1 {
+    font-size: 28px;
+    font-family: "Nunito", sans-serif;
+}
+
+.body-section h2 {
+    font-size: 22px;
+    font-family: "Nunito", sans-serif;
+}
+
+.body-section h3 {
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+}
+
+.information-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.profil-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+}
+
+.name-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;      
+    gap: 8px;
+    text-align: center;
+}
+
+.username {
+    font-family: "Nunito";
+    font-size: 22px;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.email{
+    font-family: "Inter";
+    font-size: 13px;
+    color: var(--gray);
+    font-weight: 400;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.name-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-section{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.modify{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--white);
+    background-color: var(--background-element-light);
+    gap: 10px;
+}
+
+.modify:hover{
+    background-color: var(--background-element);
+}
+
+.icon-modify{
+    padding-left: 10px;
+}
+
+
+.disconnect-button{
+  display: inline-block;
+  border: none;
+  background-color: var(--error);
+  border-radius: 8px;
+  padding: 12px 48px;
+  color: var(--white);
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+
+.disconnect-button:hover{
+    background-color: #541313;
+    color: var(--gray);
+}
+
+.text-color {
+    color: var(--textMuted);
+}
+
+p{
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.progress-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: auto;
+    align-items: center; 
+}
+
+.info-stats {
+    display: flex; 
+    flex-direction: column; 
+    gap: 16px; 
+}
+
+.stats-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+}
+
+.card-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-element-light);
+    width: auto;
+    border-radius: 8px;
+    padding: 8px;
+
+}
+
+.categories-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-element-light);
+    width: auto;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+@media (max-width: 768px){
+    .button-section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    }   
+}
+
+@media (min-width: 768px) {
+    .body-section h3 {
+    font-size: 24px;
+    font-family: "Nunito", sans-serif;
+}
+
+    .body-section h2 {
+        font-size: 28px;
+        font-family: "Nunito", sans-serif;
+     }
+
+     .body-section h1 {
+        font-size: 36px;
+        font-family: "Nunito", sans-serif;
+     }
+
+     .body-section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .information-section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+
+    .profil-image {
+        width: 128px;
+        height: 128px;
+        border-radius: 64px;
+    }
+
+    .name-section {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .username {
+        font-family: "Nunito";
+        font-size: 36px;
+        color: var(--white);
+        font-weight: 700;
+    }
+
+    .email {
+        font-family: "Inter";
+        font-size: 16px;
+        color: var(--gray);
+        font-weight: 500;
+    }
+
+
+    .user-info {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .stats-section {
+        display: flex;
+        flex-direction: row;
+        gap: 128px;
+        justify-content: center;
+    }
+        
+    .card-stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--background-element-light);
+        max-width: 260px;
+        width: 100%;
+        border-radius: 8px;
+
+    }
+
+    .categories-stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--background-element-light);
+        max-width: 260px;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+}
+

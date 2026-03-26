@@ -1,0 +1,346 @@
+.page-create-card {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 64px 80px;
+    background-color: var(--background);
+    flex: 1;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    align-items: center;   
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 400px;
+}
+
+.input-component {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.input {
+    border: none;
+    border-radius: 16px;
+    background-color: var(--background-element);
+    color: var(--gray);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--white);
+    width: 100%;
+    padding: 12px 16px;
+    min-height: 40px;
+}   
+
+.input-description {
+    border: none;
+    border-radius: 16px;
+    background-color: var(--background-element);
+    color: var(--gray);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--white);
+    width: 100%;
+    padding: 12px 16px;
+    min-height: 140px;
+}
+
+
+.text-file {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: var(--white);
+}
+
+
+.image-section {
+    position: relative;
+    width: 420px;
+    min-height: 320px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    padding: 40px;
+    border-radius: 12px;
+    border: 2px dashed var(--background-element-light);
+}
+
+.upload-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+
+.upload-btn {
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--background-element);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    background-color: var(--background-element-light);
+}
+
+.image-preview {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.image-section.drag-over {
+    border-color: var(--primary);
+    background-color: var(--background-element);
+}
+
+.textarea-editor {
+    border: none;
+    border-radius: 16px;
+    background-color: var(--background-element);
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    width: 100%;
+    min-height: 160px;
+    padding: 16px;
+    resize: vertical; 
+    outline: none;
+}
+
+
+.textarea-editor::placeholder {
+    color: var(--gray);
+}
+
+
+.textarea-editor::-webkit-scrollbar {
+    width: 6px;
+}
+
+.textarea-editor::-webkit-scrollbar-thumb {
+    background-color: var(--background-element-light);
+    border-radius: 4px;
+}
+
+.button-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button {
+    border: none;
+    background-color: var(--primary);
+    border-radius: 8px;
+    padding: 12px 120px;
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: var(--primary);
+    opacity: 0.7;
+}
+
+.simple-modal-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.simple-modal-overlay.active{
+  display: flex;
+}
+
+.simple-modal{
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  background-color: var(--background);
+  padding: 100px 120px;
+  border-radius: 16px;
+}
+
+.modal-color {
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0;
+}
+
+.categorie-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.color-picker-row{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.color-dot-preview{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--background-element-light);
+}
+
+.input-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-modal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 32px;
+}
+
+@media (max-width: 768px) {
+   .form {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+   }
+
+   .page-create-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .title-section {
+        gap: 32px;
+    }
+
+    .input-section {
+        gap: 32px;
+        width: 100%;
+    }
+
+    .image-section {
+        width: 96%;
+    }
+
+    .input {
+        font-size: 16px;
+        min-height: 60px;
+    }
+
+    .textarea-editor {
+        font-size: 16px;
+        min-height: 100px;
+    } 
+
+    .upload-btn {
+    font-size: 12px;
+    font-weight: 500;
+    }
+    
+    .text-file {
+        font-weight: 700;
+        font-style: normal;
+        font-size: 14px;
+        color: var(--white);
+    }
+
+    .simple-modal{
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        background-color: var(--background);
+        padding: 20px 36px;
+        border-radius: 16px;
+        width: 90%;
+    }
+
+    button {
+        border: none;
+        background-color: var(--primary);
+        border-radius: 8px;
+        padding: 12px 120px;
+        color: var(--white);
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-size: 12px;
+        transition: all ease 0.5s;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    
+  }

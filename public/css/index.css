@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+    --background: #131022;
+    --background-element: #1F1C2D;
+    --background-element-light: #2B2838;
+    --white: #FFFFFF;
+    --gray: #ABAAB1;
+    --primary: #3211D4;
+    --secondary: #A789CB;
+    --success: #21725E;
+    --error: #A82525;
+    --textMuted: #ABAAB1;
+    --whitemode-background: #FFFFFF;
+    --whitemode-background-element: #EAEAEA;
+    --whitemode-text: #131022;
+    --whitemode-input-element: #F7DEFF;
+    --light-gray: #868586;
+    --whitemode-footer: #F6F4F4;
+}
+
+html[data-theme="light"] {
+    --background: var(--whitemode-background);
+    --background-element: var(--whitemode-background-element);
+    --background-element-light: var(--whitemode-background-element);
+    --white: var(--whitemode-text);
+    --gray: var(--light-gray);
+    --textMuted: var(--light-gray);
+    --primary: var(--whitemode-input-element)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    transition: background-color .25s ease, color .25s ease;
+    padding: 0px 0px;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white); 
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--secondary);
+  border-radius: 10px;
+}
+
+.theme-icon {
+  fill: currentColor;
+}
+
+.error {
+    color: var(--error);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+h1 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 62px;
+    color: var(--white);
+    line-height: 64px;
+}
+
+h2 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 34px;
+    color: var(--white);
+    line-height: 48px;
+}
+
+h3 {
+
+}
+
+
+.text {
+
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--white);
+}
+
+.text-nunito-gray {
+
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.text-inter {
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: var(--white);
+}
+
+.text-inter-gray {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.button {
+
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--white);
+}
+
+.header-admin {
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+}
+
+.dashboad {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+}
+
+.logo-admin {
+    max-width: 238px;
+    width: 100%;
+}
+
+.dash {
+    color: var(--white);
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        
+    }
+
+    h2 {
+
+    }
+
+    h3 {
+
+    }
+
+    .text {
+
+    }
+
+    .header-admin {
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: flex-start;
+    }
+    .dashboad {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .logo-admin {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .dash {
+        color: var(--white);
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    h1 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    h3 {
+
+    }
+
+    .text {
+
+    }
+
+    .text-nunito-gray {
+        font-size: 12px;
+    }
+
+    .button {
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .text-inter-gray {
+        font-size: 12px;
+    }
+
+    .header-admin {
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+
+    .dashboad {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .logo-admin {
+        max-width: 160px;
+        width: 100%;
+    }
+
+    .dash {
+        color: var(--white);
+    }
+    
+    .text-inter {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,44 @@
+body {
+    background: var(--background);
+    color: var(--white);
+}
+
+.main-404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+}
+
+.body-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: auto;
+    min-height: 80vh;
+}
+
+.body-section-img {
+    padding: 32px 0px;
+    width: 430px;
+    height: 680px;
+}
+
+@media (max-width: 768px){
+    .body-section-img {
+        padding: 0px;
+        gap: 10px;
+        height: 340px;
+        width: 280px;
+    } 
+    .body-section {
+        gap: 32px;
+        padding: 16px 16px;
+    }
+}
+
+

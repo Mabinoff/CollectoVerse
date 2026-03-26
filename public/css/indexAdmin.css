@@ -1,0 +1,313 @@
+p {
+    text-align: justify;
+    color: var(--textMuted);
+    font-family: 'Inter';
+}
+
+.p {
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+}
+
+.body-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    height: 100vmin;
+    border-top: 0.6px solid var(--background-element);
+}
+
+.sidebar-section > div {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.sidebar-section > button {
+    border: none;
+    background-color: var(--error);
+    border-radius: 8px;
+    padding: 12px 48px;
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    max-width: 102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-section {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    gap: 2px;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.collection-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 32px 32px;
+    gap: 32px;
+    border-left: 0.6px solid var(--background-element);
+    border-top: 0.6px solid var(--background-element);
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.review {
+    background-color: var(--background-element);
+    border-radius: 8px;
+    padding: 16px 16px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10PX;
+}
+
+.delete {
+    
+    border: none;
+    background-color: var(--error);
+    border-radius: 8px;
+    padding: 12px 48px;
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    max-width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.view {
+    border: none;
+    background-color: var(--textMuted);
+    border-radius: 8px;
+    padding: 12px 48px;
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    max-width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    
+    border: none;
+    background-color: var(--error);
+    border-radius: 8px;
+    padding: 12px 48px;
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    max-width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    p {
+    text-align: justify;
+    color: var(--textMuted);
+}
+
+.p {
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.body-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    border-top: 0.6px solid var(--background-element);
+}
+
+.sidebar-section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 30px;
+    border-right: 0.6px solid var(--background-element);
+    border-top: 0.6px solid var(--background-element);
+}
+
+.collection-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 32px 32px;
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.review {
+    background-color: var(--background-element);
+    border-radius: 8px;
+    padding: 16px 16px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10PX;
+}
+
+.delete {
+    
+    border: none;
+    background-color: var(--error);
+    border-radius: 8px;
+    padding: 12px 48px;
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.view {
+    border: none;
+    background-color: var(--textMuted);
+    border-radius: 8px;
+    padding: 12px 48px;
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+button {
+    min-width: 112px;
+    border: none;
+    background-color: var(--error);
+    border-radius: 8px;
+    padding: 12px 48px;
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+}
